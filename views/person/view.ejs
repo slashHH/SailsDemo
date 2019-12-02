@@ -1,0 +1,11 @@
+<!--view.ejs-->
+<form action="/person/view/:id" method="GET">
+    <div class="form-group">
+            <input type="text" class="form-control" name="Person[name]" value="<%= person.name %>" required>
+            <input type="number" class="form-control" name="Person[age]" value="<%= person.age %>" required>
+        
+        </div>
+</form>
+<form action="/person/delete/:id" method="POST">
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
